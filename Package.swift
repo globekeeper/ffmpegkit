@@ -13,6 +13,9 @@ let package = Package(
                       checksum: "85d4ba0f4041308962c335f884b409240ec07aec1d4b1496dde5913fa233a907"),
         .target(name: "Depend",
                 linkerSettings: [
+                    .linkedLibrary("z"),
+                    .linkedLibrary("bz2"),
+                    .linkedLibrary("iconv"),
                     .linkedFramework("VideoToolbox")
                 ]
                )
