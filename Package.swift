@@ -3,9 +3,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "ffmpegkit",
+    name: "ffmpegkitWrapper",
     products: [
-        .library(name: "ffmpegkit", type: .static, targets: ["ffmpegkitWrapper"]),
+        .library(name: "ffmpegkitWrapper", targets: ["ffmpegkitWrapper"]),
     ],
     targets: [
         .binaryTarget(name: "ffmpegkit",
