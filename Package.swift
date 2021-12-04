@@ -9,8 +9,8 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "ffmpegkit",
-                               url: "https://github.com/tanersener/ffmpeg-kit/releases/download/v4.5/ffmpeg-kit-audio-4.5-ios-xcframework.zip",
-                               checksum: "85d4ba0f4041308962c335f884b409240ec07aec1d4b1496dde5913fa233a907"),
+                               url: "https://github.com/tanersener/ffmpeg-kit/releases/download/v4.5.LTS/ffmpeg-kit-audio-4.5.LTS-ios-framework.zip",
+                               checksum: "c043f2567c00543b2f94dabb8b436dd14eb9aa45ff8ae0cd47828d08f1ff6fa9"),
         
             .target(name: "ffmpegkitWrapper",
                     dependencies: [
