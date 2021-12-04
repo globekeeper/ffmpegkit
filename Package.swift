@@ -16,6 +16,10 @@ let package = Package(
                     .linkedLibrary("z"),
                     .linkedLibrary("bz2"),
                     .linkedLibrary("iconv"),
+                    .linkedLibrary("c++"),
+                    .linkedFramework("AVFoundation"),
+                    .linkedFramework("AudioToolbox"),
+                    .linkedFramework("CoreMedia"),
                     .linkedFramework("VideoToolbox")
                 ]
                )
