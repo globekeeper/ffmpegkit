@@ -3,16 +3,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "ffmpegkit",
+    name: "ffmpegkitWrapper",
     products: [
-        .library(name: "ffmpegkit", targets: ["Depend"]),
+        .library(name: "ffmpegkitWrapper", targets: ["ffmpegkit"]),
     ],
     targets: [
         .binaryTarget(name: "ffmpegkit",
                       url: "https://github.com/tanersener/ffmpeg-kit/releases/download/v4.5/ffmpeg-kit-audio-4.5-ios-xcframework.zip",
                       checksum: "85d4ba0f4041308962c335f884b409240ec07aec1d4b1496dde5913fa233a907"),
         
-            .target(name: "Depend",
+            .target(name: "ffmpegkitWrapper",
                     dependencies: [
                         .target(name: "ffmpegkit"),
                     ],
