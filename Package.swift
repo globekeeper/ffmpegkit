@@ -29,6 +29,7 @@ let package = Package(
             "twolame",
             "vo-amrwbenc"
           ]),
+        .library(name: "lame", targets: ["lame"]),
            .library(name: "libavcodec", targets: ["libavcodec"]),
            .library(name: "libavdevice", targets: ["libavdevice"]),
            .library(name: "libavfilter", targets: ["libavfilter"]),
