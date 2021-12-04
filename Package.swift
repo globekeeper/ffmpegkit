@@ -24,8 +24,8 @@ let package = Package(
                         .linkedFramework("AVFoundation"),
                         .linkedFramework("AudioToolbox"),
                         .linkedFramework("CoreMedia"),
-                        .linkedFramework("VideoToolbox"),
-                        .unsafeFlags(["-F", "/path/to/framework/parent/directory"])
+                        .linkedFramework("VideoToolbox")
+//                        .unsafeFlags(["-F", "/path/to/framework/parent/directory"])
                     ]
                    )
     ]
