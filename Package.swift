@@ -3,13 +3,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "ffmpegkitWrapper",
+    name: "ffmpegkit",
     products: [
-        .library(name: "ffmpegkitWrapper", targets: ["ffmpegkit"]),
+        .library(name: "ffmpegkit", type: .static, targets: ["ffmpegkitWrapper"]),
     ],
     targets: [
         .binaryTarget(name: "ffmpegkit",
-                      url: "https://github.com/tanersener/ffmpeg-kit/releases/download/v4.5.LTS/ffmpeg-kit-audio-4.5.LTS-ios-static-universal.zip",
+                      url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/bundle-apple-xcframework-ios.zip",
                       checksum: "83ed2eac6d88a29374d87179bfcb633bea7fa410940b688e9ab6cd51d3447f5f"),
         
             .target(name: "ffmpegkitWrapper",
