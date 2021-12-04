@@ -28,7 +28,27 @@ let package = Package(
             "speex",
             "twolame",
             "vo-amrwbenc"
-          ])
+          ]),
+           .library(name: "libavcodec", targets: ["libavcodec"]),
+           .library(name: "libavdevice", targets: ["libavdevice"]),
+           .library(name: "libavfilter", targets: ["libavfilter"]),
+           .library(name: "libavformat", targets: ["libavformat"]),
+           .library(name: "libavutil", targets: ["libavutil"]),
+           .library(name: "libilbc", targets: ["libilbc"]),
+           .library(name: "libogg", targets: ["libogg"]),
+           .library(name: "libopencore-amrnb", targets: ["libopencore-amrnb"]),
+           .library(name: "libsndfile", targets: ["libsndfile"]),
+           .library(name: "libswresample", targets: ["libswresample"]),
+           .library(name: "libswscale", targets: ["libswscale"]),
+           .library(name: "libvorbis", targets: ["libvorbis"]),
+           .library(name: "libvorbisenc", targets: ["libvorbisenc"]),
+           .library(name: "libvorbisfile", targets: ["libvorbisfile"]),
+           .library(name: "opus", targets: ["opus"]),
+           .library(name: "shine", targets: ["shine"]),
+           .library(name: "soxr", targets: ["soxr"]),
+           .library(name: "speex", targets: ["speex"]),
+           .library(name: "twolame", targets: ["twolame"]),
+           .library(name: "vo-amrwbenc", targets: ["vo-amrwbenc"])
     ],
     targets: [
         .binaryTarget(name: "ffmpegkit", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/ffmpegkit.xcframework.zip", checksum: "761083d83891be66eed20cdd78af4bdd559cc43aa289516392738a55e5a8644c"),
