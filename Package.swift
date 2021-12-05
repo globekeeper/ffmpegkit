@@ -3,19 +3,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "ffmpegkitWrapper",
+    name: "ffmpegkit",
     products: [
-        .library(name: "ffmpegkitWrapper", targets: ["ffmpegkitWrapper"]),
+        .library(name: "ffmpegkit", type: .static, targets: ["ffmpegkit", "Depend"]),
     ],
     targets: [
         .binaryTarget(name: "ffmpegkit",
-                               url: "https://github.com/tanersener/ffmpeg-kit/releases/download/v4.5.LTS/ffmpeg-kit-audio-4.5.LTS-ios-framework.zip",
-                               checksum: "c043f2567c00543b2f94dabb8b436dd14eb9aa45ff8ae0cd47828d08f1ff6fa9"),
-        
-            .target(name: "ffmpegkitWrapper",
-                    dependencies: [
-                        .target(name: "ffmpegkit"),
-                    ],
+                               url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/bundle-apple-xcframework-ios.zip",
+                               checksum: "83ed2eac6d88a29374d87179bfcb633bea7fa410940b688e9ab6cd51d3447f5f"),
+            .target(name: "Depend",
                     linkerSettings: [
                         .linkedLibrary("z"),
                         .linkedLibrary("bz2"),
@@ -25,7 +21,6 @@ let package = Package(
                         .linkedFramework("AudioToolbox"),
                         .linkedFramework("CoreMedia"),
                         .linkedFramework("VideoToolbox")
-//                        .unsafeFlags(["-F", "/path/to/framework/parent/directory"])
                     ]
                    )
     ]
