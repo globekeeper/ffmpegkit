@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "ffmpegkit",
     products: [
-        .library(name: "ffmpegkit", targets: ["ffmpegkit", "lame", "libavcodec", "libavdevice", "libavfilter", "libavformat", "libavutil", "libilbc", "libogg", "libsndfile", "libswresample", "libswscale", "libvorbis", "opus", "shine", "soxr", "speex", "twolame", "vo-amrwbenc", "Depend"])
+        .library(name: "ffmpegkit", targets: ["ffmpegkit", "lame", "libavcodec", "libavdevice", "libavfilter", "libavformat", "libavutil", "libilbc", "libogg", "libsndfile", "libswresample", "libswscale", "opus", "shine", "soxr", "speex", "twolame", "vo-amrwbenc", "Depend"])
     ],
     targets: [
         .binaryTarget(name: "ffmpegkit", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/ffmpegkit.xcframework.zip", checksum: "beb9a21f416fb9e168bd57be09b1303b58b160edfac3e71f235a7f7d37743cdc"),
@@ -21,7 +21,7 @@ let package = Package(
         .binaryTarget(name: "libsndfile", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libsndfile.xcframework.zip", checksum: "ab5dc79404687fd7dcdab18c6b4fb7715bf4ecb9914cfef9217d29564d7ddc38"),
         .binaryTarget(name: "libswresample", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libswresample.xcframework.zip", checksum: "20250602663926686bc8d6a3d779e5213eb30fbab5afdbb1fa4e0bd021f9a0ff"),
         .binaryTarget(name: "libswscale", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libswscale.xcframework.zip", checksum: "d23b4456e814fa0c54548b62b46e3d530b471d29c681d3169f92d67ce3b4ac37"),
-        .binaryTarget(name: "libvorbis", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libvorbis.xcframework.zip", checksum: "5ac2891aba3cb5002f8f30ad5edd79e0bba5bddf1ef144dd8f973375d6bc39fa"),
+//        .binaryTarget(name: "libvorbis", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libvorbis.xcframework.zip", checksum: "5ac2891aba3cb5002f8f30ad5edd79e0bba5bddf1ef144dd8f973375d6bc39fa"),
 //        .binaryTarget(name: "libvorbisenc", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libvorbisenc.xcframework.zip", checksum: "775259c9e4ca92c74931c82228c4dc92a6c8f007ca8f4ce6e3d3991c8be8e39e"),
 //        .binaryTarget(name: "libvorbisfile", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libvorbisfile.xcframework.zip", checksum: "5efa542e5755c0c879de5ec03a751e8ebe89e63feacc20653fa2d98a6817aa64"),
         .binaryTarget(name: "opus", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/opus.xcframework.zip", checksum: "04c465fcd0b6b3d50fda57ab26679dbe208eb52c5132f9d24869c2b39a3ff38c"),
