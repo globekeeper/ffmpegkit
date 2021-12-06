@@ -5,12 +5,12 @@ import PackageDescription
 let package = Package(
     name: "ffmpegkit",
     products: [
-        .library(name: "ffmpegkit", targets: ["ffmpegkit", "lame", "libavcodec", "libavdevice", "libavfilter", "libavformat", "libavutil", "libilbc", "libogg", "libsndfile", "libswresample", "libswscale", "opus", "shine", "soxr", "speex", "twolame", "vo-amrwbenc", "Depend"])
+        .library(name: "ffmpegkit", targets: ["ffmpegkit", "lame", "libavdevice", "libavfilter", "libavformat", "libavutil", "libilbc", "libogg", "libsndfile", "libswresample", "libswscale", "opus", "shine", "soxr", "speex", "twolame", "vo-amrwbenc", "Depend"])
     ],
     targets: [
         .binaryTarget(name: "ffmpegkit", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/ffmpegkit.xcframework.zip", checksum: "beb9a21f416fb9e168bd57be09b1303b58b160edfac3e71f235a7f7d37743cdc"),
         .binaryTarget(name: "lame", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/lame.xcframework.zip", checksum: "3cfb1ce13a64538acfd6788d1ad6aebb974d15cc6890341f7a90768227873dfa"),
-        .binaryTarget(name: "libavcodec", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libavcodec.xcframework.zip", checksum: "fd377167bcbbbb52c15ed2a1d03008fc79cd8b0cc0afceaa695d7184ffe75c20"),
+//        .binaryTarget(name: "libavcodec", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libavcodec.xcframework.zip", checksum: "fd377167bcbbbb52c15ed2a1d03008fc79cd8b0cc0afceaa695d7184ffe75c20"),
         .binaryTarget(name: "libavdevice", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libavdevice.xcframework.zip", checksum: "48c93cbf33c08a0d299d613fd222bcfde5d8ded0ff06042bd3ff7d54bb49a443"),
         .binaryTarget(name: "libavfilter", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libavfilter.xcframework.zip", checksum: "fa206177f7e2fc423eb30493c03345502a3181d41b3f893f2e35ddcbc2867c99"),
         .binaryTarget(name: "libavformat", url: "https://github.com/globekeeper/ffmpegkit/releases/download/v4.5.0/libavformat.xcframework.zip", checksum: "b1f25702c7e88bcc62a2096df5d93283303165019105298d3b6824d7a7bab699"),
